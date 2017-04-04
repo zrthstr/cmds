@@ -11,7 +11,7 @@ date +%s
 munpack
 ```
 
-#### runn terrafrom with N threads in paralel
+#### runn terrafrom with N threads in parallel
 ``` sh
 terraform plan -parallelism=2
 ```
