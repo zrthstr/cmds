@@ -15,3 +15,8 @@ munpack
 ``` sh
 terraform plan -parallelism=2
 ```
+
+#### /* no comment */
+``` sh
+aws opsworks --region us-east-1 describe-stacks
+```
