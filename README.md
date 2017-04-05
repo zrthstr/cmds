@@ -26,4 +26,5 @@ aws opsworks --region us-east-1 describe-stacks
 aws opsworks --region us-east-1 describe-stacks --output=json | jq '.Stacks | .[].Arn '
 
 aws ec2 describe-vpcs
+aws ec2 describe-regions --output=json | jq '.Regions | .[].RegionName '
 ```
