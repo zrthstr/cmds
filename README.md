@@ -9,6 +9,10 @@ date +%s
 ``` sh
 cd $(pwd -P)
 ```
+#### diff 2 folders
+``` sh
+diff -rq folderN folderM
+```
 
 #### extract attachment from mail
 ```sh
