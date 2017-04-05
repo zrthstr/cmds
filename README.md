@@ -5,6 +5,10 @@ commands i keep forgetting
 ``` sh
 date +%s
 ```
+#### cd to resolved symlink position
+``` sh
+cd $(pwd -P)
+```
 
 #### extract attachment from mail
 ```sh
