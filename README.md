@@ -14,6 +14,11 @@ cd $(pwd -P)
 diff -rq folderN folderM
 ```
 
+#### shell magic
+```sh
+diff <(ssh elvis ls -1 foo) <(ls -1 bar)
+```
+
 #### extract attachment from mail
 ```sh
 munpack
