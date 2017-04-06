@@ -16,7 +16,7 @@ diff -rq folderN folderM
 
 #### shell magic
 ```sh
-diff <(ssh elvis ls -1 foo) <(ls -1 bar)
+diff <(ssh foo ls -1 bar) <(ls -1 rand)
 ```
 
 #### extract attachment from mail
