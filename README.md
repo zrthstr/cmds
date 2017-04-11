@@ -57,6 +57,8 @@ for region in $(aws ec2 describe-regions --output=json | jq -r '.Regions[].Regio
 
 aws s3api list-buckets --query 'Buckets[].Name'
 
+for e  in $(aws s3api list-buckets --query 'Buckets[].Name' ) ; do  aws s3api list-objects --bucket $e --output json --query "[sum(Contents[].Size), length(Contents[])]"  ; done
+
 ```
 
 
