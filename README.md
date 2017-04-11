@@ -55,6 +55,8 @@ for region in $(aws ec2 describe-regions --output=json | jq -r '.Regions[].Regio
 # list regions and their vpcs
 for region in $(aws ec2 describe-regions --output=json | jq -r '.Regions[].RegionName ' ); do echo; echo region: $region;  aws ec2 describe-vpcs --region=$region --output=json | jq ".Vpcs[].VpcId "  ; done
 
+aws s3api list-buckets --query 'Buckets[].Name'
+
 ```
 
 
