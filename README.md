@@ -8,6 +8,7 @@ date +%s
 #### cd to resolved symlink position
 ``` sh
 cd $(pwd -P)
+cd -P some_link
 ```
 #### diff 2 folders
 ``` sh
