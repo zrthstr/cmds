@@ -28,6 +28,8 @@ munpack
 #### runn terrafrom with N threads in parallel
 ``` sh
 terraform plan -parallelism=2
+
+# https://github.com/Yleisradio/homebrew-terraforms  # effortless use multiple terraform versions on osx 
 ```
 
 #### jq print without quotes
