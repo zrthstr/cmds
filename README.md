@@ -68,6 +68,9 @@ aws s3api list-buckets --query 'Buckets[].Name'
 
 for e  in $(aws s3api list-buckets --query 'Buckets[].Name' ) ; do  aws s3api list-objects --bucket $e --output json --query "[sum(Contents[].Size), length(Contents[])]"  ; done
 
+aws iam list-server-certificates
+aws iam upload-server-certificate --server-certificate-name some_wild_pizza --certificate-body file://pizza.pem --certificate-chain file://cheeze.rand  --private-key file://salami.key
+
 ```
 
 
