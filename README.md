@@ -1,5 +1,7 @@
 ## cmds
-commands i keep forgetting
+
+### compression
+```tar -cvf output.tar /dirname```
 
 #### unix time stamp in secounds
 ``` sh
