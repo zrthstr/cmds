@@ -1,7 +1,11 @@
 ## cmds
 
 ### compression
-```tar -cvf output.tar /dirname```
+```sh
+tar -cvf output.tar /dirname
+tar -cvzf output.tar.gz /dirname
+tar -xvf /tmp/data.tar
+```
 
 #### unix time stamp in secounds
 ``` sh
