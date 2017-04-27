@@ -71,6 +71,9 @@ for e  in $(aws s3api list-buckets --query 'Buckets[].Name' ) ; do  aws s3api li
 aws iam list-server-certificates
 aws iam upload-server-certificate --server-certificate-name some_wild_pizza --certificate-body file://pizza.pem --certificate-chain file://cheeze.rand  --private-key file://salami.key
 
+#### find instances
+aws ec2 describe-instances  | grep IAMINSTANCEPROFILE | grep rabbit
+
 ```
 
 
