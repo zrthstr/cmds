@@ -73,6 +73,7 @@ aws iam upload-server-certificate --server-certificate-name some_wild_pizza --ce
 
 #### find instances
 aws ec2 describe-instances  | grep IAMINSTANCEPROFILE | grep rabbit
+aws ec2 describe-instances  --instance-ids i-xzxzxxzxzxxzxzxzx
 
 ```
 
