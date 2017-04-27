@@ -73,7 +73,13 @@ aws iam upload-server-certificate --server-certificate-name some_wild_pizza --ce
 
 #### find instances
 aws ec2 describe-instances  | grep IAMINSTANCEPROFILE | grep rabbit
-aws ec2 describe-instances  --instance-ids i-xzxzxxzxzxxzxzxzx
+aws ec2 describe-instances  --instance-ids i-xzxzxxzxzxxzxzxzx 
+aws ec2 describe-instances  --instance-ids i-xzxzxxzxzxxzxzxzx | grep SECURITYGROUPS
+
+#### security groups
+aws ec2 describe-security-groups
+aws ec2 describe-security-groups | grep rabbit
+aws ec2 describe-security-groups --group-id sg-afafafaf
 
 ```
 
