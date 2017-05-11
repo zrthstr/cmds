@@ -20,10 +20,12 @@ if has("autocmd")
 endif
 ```
 
-### osx things
+### just osx things
 ```
 # pipe to copy+paste buffer
 cat fiele_name | pbcopy
+# paste again
+pbpaste > foo
 ```
 
 ### compression
