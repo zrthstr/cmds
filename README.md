@@ -20,6 +20,11 @@ if has("autocmd")
 endif
 ```
 
+### osx things
+```
+cat fiele_name | pbcopy
+```
+
 ### compression
 ```sh
 tar -cvf output.tar /dirname
