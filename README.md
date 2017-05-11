@@ -22,6 +22,7 @@ endif
 
 ### osx things
 ```
+# pipe to copy+paste buffer
 cat fiele_name | pbcopy
 ```
 
