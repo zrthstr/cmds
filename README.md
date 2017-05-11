@@ -26,6 +26,11 @@ endif
 cat fiele_name | pbcopy
 # paste again
 pbpaste > foo
+
+## open ports
+sudo netstat -atp tcp | grep -i "listen"
+sudo lsof -i -P | grep -i "listen"
+
 ```
 
 ### compression
