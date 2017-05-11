@@ -2,6 +2,18 @@
 
 ### vim
 ```
+syntax on
+"filetype indent plugin on
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set background=dark
+set ruler
+
+nnoremap <buffer> <F8> :exec '!python2' shellescape(@%, 1)<cr>
+nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
+
 " Uncomment the following to have Vim jump to the last position when reopening a file "
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
