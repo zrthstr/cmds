@@ -43,6 +43,9 @@ pbpaste > foo
 sudo netstat -atp tcp | grep -i "listen"
 sudo lsof -i -P | grep -i "listen"
 
+## set file append only, so chattr +a foo on a sane os 
+sudo chflags uappend passwd
+
 ```
 
 ### compression
