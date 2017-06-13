@@ -4,6 +4,7 @@
 ```
 for e in filter nat mangle raw ; do sudo iptables -t $e -L ; done
 
+## really show ALL iptables rules
 iptables -vL -t filter
 iptables -vL -t nat
 iptables -vL -t mangle
