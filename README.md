@@ -46,6 +46,15 @@ sudo lsof -i -P | grep -i "listen"
 ## set file append only, so chattr +a foo on a sane os 
 sudo chflags uappend passwd
 
+# arch    "archived flag"
+# opaque  "opaque flag"
+# nodump  "nodump flag"
+# sappnd  "system append-only flag"
+# schg    "system immutable flag"
+# uappnd  "user append-only flag"
+# uchg    "user immutable flag"
+
+
 ```
 
 ### compression
