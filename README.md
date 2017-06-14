@@ -60,6 +60,20 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ### do so in finder --> CMD + SHIFT + . 
 
 ```
+### python
+```
+source virtualenvwrapper.sh
+mkvirtualenv $project_name
+workon $project_name
+virtualenvwrapper_get_python_version
+lssitepackages
+pip list
+pip freeze
+lsvirtualenv
+echo $VIRTUAL_ENV
+deactivate
+pip freeze > requirements.txt
+
 
 ### compression
 ```sh
