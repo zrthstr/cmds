@@ -58,8 +58,8 @@ sudo chflags uappend passwd
 ## show .dotfiles in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 ### do so in finder --> CMD + SHIFT + . 
-
 ```
+
 ### python
 ```
 source virtualenvwrapper.sh
@@ -73,7 +73,7 @@ lsvirtualenv
 echo $VIRTUAL_ENV
 deactivate
 pip freeze > requirements.txt
-
+```
 
 ### compression
 ```sh
