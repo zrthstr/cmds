@@ -55,6 +55,8 @@ sudo chflags uappend passwd
 # uappnd  "user append-only flag"
 # uchg    "user immutable flag"
 
+## show .dotfiles in finder
+defaults write com.apple.finder AppleShowAllFiles YES
 
 ```
 
