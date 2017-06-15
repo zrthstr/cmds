@@ -58,6 +58,9 @@ sudo chflags uappend passwd
 ## show .dotfiles in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 ### do so in finder --> CMD + SHIFT + . 
+
+### screen resolution quik changer
+
 ```
 
 ### python
