@@ -62,6 +62,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ### screen resolution quik changer
 
 ### install aws tools
+brew install python3
 pip3 install --user --upgrade awscli
 
 ```
