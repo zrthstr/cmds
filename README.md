@@ -64,6 +64,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ### install aws tools
 brew install python3
 pip3 install --user --upgrade awscli
+# export PATH=~/Library/Python/3.6/bin/:$PATH  
 
 ```
 
