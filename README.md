@@ -165,6 +165,9 @@ aws ec2 describe-security-groups
 aws ec2 describe-security-groups | grep rabbit
 aws ec2 describe-security-groups --group-id sg-afafafaf
 
+### dns backup from AWS
+for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do cli53 export $domain ; done
+
 ```
 
 
