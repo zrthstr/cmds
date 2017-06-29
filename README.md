@@ -173,4 +173,5 @@ for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do
 #### findung fulfillment and happiness with ansible
 ```
 ansible -m ping -i inventory all
+ansible all -a "/bin/echo hello"  -i inventory
 ```
