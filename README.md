@@ -60,6 +60,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ### do so in finder --> CMD + SHIFT + . 
 
 ### screen resolution quik changer
+https://github.com/avibrazil/RDM
 
 ### install aws tools
 brew install python3
