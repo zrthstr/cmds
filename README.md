@@ -66,6 +66,9 @@ brew install python3
 pip3 install --user --upgrade awscli
 # export PATH=~/Library/Python/3.6/bin/:$PATH  
 
+### screen shot
+# [command] + [shift] + [3] or [4]
+
 ```
 
 ### python
