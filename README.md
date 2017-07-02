@@ -71,6 +71,7 @@ pip3 install --user --upgrade awscli
 brew services start docker-machine
 # docker-machine env default
 eval $(docker-machine env default)
+docker-machine ssh default
 
 ### screen shot
 # [command] + [shift] + [3] or [4]
