@@ -67,6 +67,9 @@ brew install python3
 pip3 install --user --upgrade awscli
 # export PATH=~/Library/Python/3.6/bin/:$PATH  
 
+### osx docker
+brew services start docker-machine
+
 ### screen shot
 # [command] + [shift] + [3] or [4]
 
