@@ -69,6 +69,8 @@ pip3 install --user --upgrade awscli
 
 ### osx docker
 brew services start docker-machine
+# docker-machine env default
+eval $(docker-machine env default)
 
 ### screen shot
 # [command] + [shift] + [3] or [4]
