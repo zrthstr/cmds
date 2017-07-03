@@ -132,7 +132,14 @@ terraform apply
 terraform graph | dot -Tpng > graph.png
 terraform import aws_vpc.test_vpc vpc-acabacab
 
-# https://github.com/Yleisradio/homebrew-terraforms  # effortless use multiple terraform versions on osx 
+### terraform helpers
+# effortless use multiple terraform versions on osx
+# https://github.com/Yleisradio/homebrew-terraforms
+
+# tool to generate TF configs and TFstate files from AWS
+gem install --user-install terraforming
+terraforming s3
+
 ```
 
 #### jq print without quotes
