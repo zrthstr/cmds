@@ -130,6 +130,7 @@ munpack
 terraform plan -parallelism=2
 terraform apply
 terraform graph | dot -Tpng > graph.png
+terraform import aws_vpc.test_vpc vpc-acabacab
 
 # https://github.com/Yleisradio/homebrew-terraforms  # effortless use multiple terraform versions on osx 
 ```
