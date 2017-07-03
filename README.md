@@ -125,8 +125,9 @@ diff <(ssh foo ls -1 bar) <(ls -1 rand)
 munpack
 ```
 
-#### runn terrafrom with N threads in parallel
+#### terrafrom
 ``` sh
+### general tf things
 terraform plan -parallelism=2
 terraform apply
 terraform graph | dot -Tpng > graph.png
@@ -136,9 +137,10 @@ terraform import aws_vpc.test_vpc vpc-acabacab
 # effortless use multiple terraform versions on osx
 # https://github.com/Yleisradio/homebrew-terraforms
 
-# tool to generate TF configs and TFstate files from AWS
+### tool to generate TF configs and TFstate files from AWS
+# https://github.com/dtan4/terraforming
 gem install --user-install terraforming
-terraforming s3
+terraforming <s3|vpc|ec2....> [--region=foo]
 
 ```
 
