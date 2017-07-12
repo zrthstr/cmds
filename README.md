@@ -125,7 +125,7 @@ diff <(ssh foo ls -1 bar) <(ls -1 rand)
 munpack
 ```
 
-#### terrafrom
+#### terraform
 ``` sh
 ### general tf things
 terraform plan -parallelism=2
@@ -141,6 +141,8 @@ terraform import aws_vpc.test_vpc vpc-acabacab
 # https://github.com/dtan4/terraforming
 gem install --user-install terraforming
 terraforming <s3|vpc|ec2....> [--region=foo]
+
+terraform import aws_route53_record.youroutnamehere  ZXXXXXzonenzmeXXXX_dnsentry.tld_RECCORTYPE
 
 ```
 
