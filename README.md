@@ -149,8 +149,9 @@ terraforming r53r > r.tf
 terraforming r53z > z.tf
 terraforming r53z --tfstate > z.tfstate
 terraforming r53r --tfstate --merge=z.tfstate  > all.tfstate
-cat all.tfstate | sed -e 's/\.-/\./g' > all.tfstate 
+cat all.tfstate | sed -e 's/\.-/\./g' > all.tfstate_tmp
 rm z.tfstate
+mv all.tfstate_tmp all.tfstate
 
 ```
 
