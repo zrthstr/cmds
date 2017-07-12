@@ -144,6 +144,13 @@ terraforming <s3|vpc|ec2....> [--region=foo]
 
 terraform import aws_route53_record.youroutnamehere  ZXXXXXzonenzmeXXXX_dnsentry.tld_RECCORTYPE
 
+### full terraforming import
+terraforming r53r > r.tf
+terraforming r53z > z.tf
+terraforming r53z --tfstate > z.tfstate
+terraforming r53r --tfstate --merge=z.tfstate  > all.tfstate
+rm z.tfstate
+
 ```
 
 #### jq print without quotes
