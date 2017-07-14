@@ -154,21 +154,24 @@ rm z.tfstate
 mv all.tfstate_tmp all.tfstate
 
 ### terraforming aws iam_s
-terraforming iamu > iamu.tf
 terraforming iamg > iamg.tf
 terraforming iamgm > iamgm.tf
+terraforming iamgp > iamgp.tf
+terraforming iamr > iamr.tf
+terraforming iamrp | tee iamrp.tf
 terraforming iamp | tee iamp.tf
 terraforming iampa | tee iampa.tf
-terraforming iamrp | tee iamrp.tf
 terraforming iamu | tee iamu.tf
 terraforming iamup | tee iamup.tf
 
 terraforming iamg --tfstate > iamg.tfstate
 mv iamg.tfstate terraform.tfstate
 terraforming iamgm --overwrite --tfstate --merge=terraform.tfstate
+terraforming iamgp --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamp --overwrite --tfstate --merge=terraform.tfstate
 terraforming iampa --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamrp --overwrite --tfstate --merge=terraform.tfstate
+terraforming iamr --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamu --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamup --overwrite --tfstate --merge=terraform.tfstate
 
