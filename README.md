@@ -33,6 +33,18 @@ if has("autocmd")
 endif
 ```
 
+### dns stuff
+```
+### get specific record
+dig  -t txt _spf.gmail.com
+### show full tree
+dig +trace heise.de
+### all reccords
+dig +nocmd heise.de any  +noall +answer
+
+
+```
+
 ### just osx things
 ```
 # pipe to copy+paste buffer
