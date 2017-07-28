@@ -10,6 +10,9 @@ iptables -vL -t nat
 iptables -vL -t mangle
 iptables -vL -t raw
 iptables -vL -t security
+
+iptables-save > <filename>
+/sbin/service iptables save 
 ```
 
 
@@ -186,6 +189,9 @@ terraforming iamrp --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamr --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamu --overwrite --tfstate --merge=terraform.tfstate
 terraforming iamup --overwrite --tfstate --merge=terraform.tfstate
+
+terraform output <output>
+
 
 ```
 
