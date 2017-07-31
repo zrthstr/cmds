@@ -50,6 +50,9 @@ dig +nocmd heise.de any  +noall +answer
 ### lvm funn
 ```
 lvmdiskscan
+vgdisplay
+lvdisplay
+
 vgreduce  --removemissing <vg>
 ```
 
