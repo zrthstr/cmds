@@ -45,7 +45,12 @@ dig +trace heise.de
 ### all reccords
 dig +nocmd heise.de any  +noall +answer
 
+```
 
+### lvm funn
+```
+lvmdiskscan
+vgreduce  --removemissing <vg>
 ```
 
 ### just osx things
