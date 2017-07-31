@@ -50,9 +50,11 @@ dig +nocmd heise.de any  +noall +answer
 ### lvm funn
 ```
 lvmdiskscan
+
 vgdisplay
 lvdisplay
 
+lvcreate -L 10G VolGroup00 -n lvolhome /dev/sdc1
 vgreduce  --removemissing <vg>
 ```
 
