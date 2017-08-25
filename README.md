@@ -46,6 +46,12 @@ dig +trace heise.de
 dig +nocmd heise.de any  +noall +answer
 
 ```
+### SElinux
+```
+ls -Z
+restorecon -R -v <file>
+```
+
 
 ### lvm funn
 ```
