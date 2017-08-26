@@ -52,6 +52,14 @@ ls -Z
 restorecon -R -v <file>
 ```
 
+### network stuff
+```
+ifconfig -a
+ip a
+netstat -tulpn
+ss -tuna
+```
+
 
 ### lvm funn
 ```
