@@ -15,8 +15,15 @@ iptables-save > <filename>
 /sbin/service iptables save 
 ```
 
-
 ### vim
+```
+#find word curser is currebntly on
+'*'
+# othere direction
+"#'
+```
+
+### vimrc
 ```
 syntax on
 "filetype indent plugin on
