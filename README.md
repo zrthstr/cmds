@@ -279,3 +279,8 @@ for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do
 ansible -m ping -i inventory all
 ansible all -a "/bin/echo hello"  -i inventory
 ```
+
+### rand
+```
+#gmail: finding unread mail in only the primary mailbox/category
+in:inbox -category:{social promotions updates forums} label:unread 
