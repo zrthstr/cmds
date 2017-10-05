@@ -272,6 +272,8 @@ aws ec2 describe-security-groups --group-id sg-afafafaf
 ### dns backup from AWS
 for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do cli53 export $domain ; done
 
+### request SSL cert from aws
+aws acm request-certificate --domain-name www.example.com
 ### list __ALL__ AWS ssl certs
 aws --profile=foo acm list-certificates
 aws --profile=ing iam list-server-certificates
