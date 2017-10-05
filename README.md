@@ -272,6 +272,10 @@ aws ec2 describe-security-groups --group-id sg-afafafaf
 ### dns backup from AWS
 for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do cli53 export $domain ; done
 
+### list __ALL__ AWS ssl certs
+aws --profile=foo acm list-certificates
+aws --profile=ing iam list-server-certificates
+
 ```
 
 #### finding fulfillment, meaning and happiness with, through or thus ansible
