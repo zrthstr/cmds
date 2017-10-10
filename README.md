@@ -288,5 +288,9 @@ ansible all -a "/bin/echo hello"  -i inventory
 
 ### rand
 ```
-#gmail: finding unread mail in only the primary mailbox/category
+##gmail: finding unread mail in only the primary mailbox/category
 in:inbox -category:{social promotions updates forums} label:unread 
+
+### gen unix passwd hash
+python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.using(rounds=5000).hash(getpass.getpass())"
+```
