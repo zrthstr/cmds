@@ -58,6 +58,10 @@ dig +nocmd heise.de any  +noall +answer
 ls -Z
 restorecon -R -v <file>
 ```
+### funn with systemd
+```
+systemctl list-unit-files | grep enabled
+```
 
 ### network stuff
 ```
