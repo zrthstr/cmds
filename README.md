@@ -298,3 +298,9 @@ in:inbox -category:{social promotions updates forums} label:unread
 ### gen unix passwd hash
 python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.using(rounds=5000).hash(getpass.getpass())"
 ```
+### unbreak java for ipmi on osx
+```
+in  /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security/java.security
+#jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize < 1024
+jdk.jar.disabledAlgorithms=MD2, RSA keySize < 1024
+```
