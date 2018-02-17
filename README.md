@@ -142,6 +142,36 @@ echo $VIRTUAL_ENV
 deactivate
 pip freeze > requirements.txt
 pip install -r requirements.txt
+
+# scraping
+
+scraper = cfscrape.CloudflareScraper()
+login = scraper.get("http://")
+login_html = lxml.html.fromstring(login.text)
+login_html.xpath(r'//*')
+login_html.xpath(r'//*')[0].xpath(r'//form')
+
+[[form.items(), form.form_values()] for form  in login_html.xpath(r'//form')]
+
+login_html.xpath(r'//form')[0].items()
+
+
+>>> print([(a.name, a.type) for a in login_html.xpath(r'//form//input')])
+
+>>> [ f.form_values() for f in login_html.xpath(r'//form')]
+[[('amember_login', ''), ('login_attempt_id', '1518864457')], []]
+>>>
+>>>
+>>> [ f.items() for f in login_html.xpath(r'//form')]
+[[('name', 'login'), ('method', 'post'), ('action', '/clients/login')], [('name', 'sendpass'), ('method', 'post'), ('action', '/clients/sendpass')]]
+>>>
+```
+
+### mitm
+```
+mitmproxy
+mitmdump
+
 ```
 
 ### compression
