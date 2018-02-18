@@ -1,5 +1,3 @@
-## cmds
-
 ### iptables
 ```
 for e in filter nat mangle raw ; do sudo iptables -t $e -L ; done
