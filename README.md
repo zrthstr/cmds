@@ -163,7 +163,6 @@ login_html.xpath(r'//form')[0].items()
 >>>
 >>>
 >>> [ f.items() for f in login_html.xpath(r'//form')]
-[[('name', 'login'), ('method', 'post'), ('action', '/clients/login')], [('name', 'sendpass'), ('method', 'post'), ('action', '/clients/sendpass')]]
 >>>
 ```
 
@@ -171,6 +170,9 @@ login_html.xpath(r'//form')[0].items()
 ```
 mitmproxy
 mitmdump
+
+# firefox profiles
+/Applications/Firefox.app/Contents/MacOS/firefox-bin -P
 
 ```
 
