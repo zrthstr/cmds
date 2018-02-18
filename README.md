@@ -110,17 +110,6 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ### screen resolution quik changer
 https://github.com/avibrazil/RDM
 
-### install aws tools
-brew install python3
-pip3 install --user --upgrade awscli
-# export PATH=~/Library/Python/3.6/bin/:$PATH  
-
-### osx docker
-brew services start docker-machine
-# docker-machine env default
-eval $(docker-machine env default)
-docker-machine ssh default
-
 ### screen shot
 # [command] + [shift] + [3] or [4]
 
@@ -308,13 +297,13 @@ for domain in $(cli53 list -format json | jq -r '.[].Name' | sed 's/.$//g' ); do
 
 ### request SSL cert from aws
 aws acm request-certificate --domain-name www.example.com
-### list __ALL__ AWS ssl certs
+### list __ALL?__ AWS ssl certs
 aws --profile=foo acm list-certificates
 aws --profile=ing iam list-server-certificates
 
 ```
 
-#### finding fulfillment, meaning and happiness with, through or thus ansible
+#### ansible
 ```
 ansible -m ping -i inventory all
 ansible all -a "/bin/echo hello"  -i inventory
