@@ -157,6 +157,7 @@ login_html.xpath(r'//form')[0].items()
 ```
 mitmproxy
 mitmdump
+dhcpdump
 
 # firefox profiles
 /Applications/Firefox.app/Contents/MacOS/firefox-bin -P
