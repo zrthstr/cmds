@@ -1,3 +1,12 @@
+###
+
+curl -i https://git.io -F "url=https://raw.githubusercontent.com/zrthstr/cmds/master/colors_formatting.sh"
+#> https://git.io/vAA3m
+
+curl -L -v https://git.io/vAA3m -o "out.sh"
+cat out.sh
+
+
 ### iptables
 ```
 for e in filter nat mangle raw ; do sudo iptables -t $e -L ; done
