@@ -1,9 +1,6 @@
-###
-###    Source: https://misc.flogisoft.com/bash/tip_colors_and_formatting 
-###
-
-
-###    bashrc: PS1='\[\033[02;32m\]\u@\H:\[\033[02;34m\]\w\$\[\033[00m\] '
+###	https://misc.flogisoft.com/bash/tip_colors_and_formatting 
+###	https://wiki.centos.org/TipsAndTricks/CustomizeBash
+###	bashrc: PS1='\[\033[02;32m\]\u@\H:\[\033[02;34m\]\w\$\[\033[00m\] '
 
 
 echo -e "\e[38;5;82mHello \e[38;5;198mWorld"
