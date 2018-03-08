@@ -3,6 +3,9 @@
 ###
 
 
+###    bashrc: PS1='\[\033[02;32m\]\u@\H:\[\033[02;34m\]\w\$\[\033[00m\] '
+
+
 echo -e "\e[38;5;82mHello \e[38;5;198mWorld"
 
 for i in {16..21} {21..16} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo
