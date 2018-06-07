@@ -6,6 +6,11 @@ curl -i https://git.io -F "url=https://raw.githubusercontent.com/zrthstr/cmds/ma
 curl -L -v https://git.io/vAA3m -o "out.sh"
 cat out.sh
 
+### concat mp3s
+```
+ffmpeg -i "concat:file1.mp3|file2.mp3" -acodec copy output.mp3
+```
+
 
 ### iptables
 ```
